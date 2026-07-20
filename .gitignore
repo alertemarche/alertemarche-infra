@@ -1,0 +1,28 @@
+# Env & secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+secrets/
+
+# Backups & dumps
+backups/
+*.sql
+*.dump
+*.tar.gz
+
+# Logs
+*.log
+logs/
+
+# Terraform (si ajouté plus tard)
+.terraform/
+*.tfstate
+*.tfstate.*
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
