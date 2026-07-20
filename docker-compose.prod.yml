@@ -85,8 +85,10 @@ services:
     restart: always
     ports:
       - "80:80"
+      - "443:443"
     volumes:
       - ./nginx/alertemarche.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./ssl:/etc/nginx/ssl:ro
       - ../frontend:/usr/share/nginx/html:ro
     depends_on:
       - app
